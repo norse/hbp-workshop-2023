@@ -237,25 +237,76 @@ model = SequentialState(
 :::
 :::
 
+
+
+## 
+
+:::: {.flex .flex-column .flex-row-l .flex-wrap-l}
+
+::: {.fl .w-25 .tc .calibre .normal .f}
+
+![](circle_y.png){.h5 .rotate-90}
+
+Extensible by everyone
+
+:::
+::: {.fl .tl .w-75 .tc .normal .f1}
+
+
+::: {.fl .lh-copy .ph5}
+Join us on [github](https://github.com/github/) and [discord](https://discord.gg/7fGN359)!
+:::
+
+::: {.incremental .lh-copy .mt5 .fl .ph5}
+- Implementation is (mostly) in Python
+- Simple neuron models can be added quickly
+- *Open* and *welcoming* community.
+::: 
+
+:::
+:::
+
+
+
 # Workshop
 
 ## 
+
+:::: {.flex .flex-column .flex-row-l .flex-wrap-l}
+
+::: {.fl .w-50 .calibre .tc .normal .f1}
+
+![](triangle_g.png){.h6 .rotate-90}
+
+Event streaming
+
+:::
+::: {.fl .w-50 .calibre .tc .normal .f1}
+
+![](circle_y.png){.h6}
+
+Deep Learning
+
+:::
+:::
+
+## Schedule
 
 ::: {.incremental}
 - 9:00 - 9:30 
     - Presentation + Questions (<- we are here)
 - 9:30 - 10:30
-    - Event streaming (Jens)
-    - Deep learning (Christian)
+    - ![](triangle_g.png){.h2 .v-mid .rotate-90} Event streaming (Jens)
+    - ![](circle_y.png){.h2 .v-mid} Deep learning (Christian)
 - 10:30 - 11:30
-    - Event streaming (Jens)
-    - Deep learning (Christian)
+    - ![](triangle_g.png){.h2 .v-mid .rotate-90} Event streaming (Jens)
+    - ![](circle_y.png){.h2 .v-mid} Deep learning (Christian)
 :::
 
 
 ## Workshop 1: Event streaming
 
-
+## Goals
 
 
 
