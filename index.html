@@ -25,6 +25,69 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link href='css/fonts.css' rel='stylesheet'>
@@ -49,6 +112,11 @@ Stockholm)</span>
 
 <section id="what-is-norse" class="slide level2">
 <h2>What is Norse?</h2>
+<div class="fragment">
+<div class="f1 green">
+<p>Spiking Neuron Primitives in PyTorch</p>
+</div>
+</div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
@@ -75,29 +143,146 @@ Stockholm)</span>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
+<div class="flex flex-column flex-row-l flex-wrap-l">
+<div class="fl w-25 tc calibre normal f">
+<p><img data-src="triangle_v.png" class="h5 rotate-90" /></p>
+<p>Blazing fast</p>
+</div>
+<div class="fl w-75 tc calibre normal f1">
+<div class="lh-copy mt5 fl pl5">
+<ul>
+<li class="fragment">PyTorch already takes care of most of the work</li>
+<li class="fragment">Implementation is performance aware</li>
+<li class="fragment">Custom code for selected operations</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-<section id="event-streaming" class="title-slide slide level1">
-<h1>Event-Streaming</h1>
-
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="flex flex-column flex-row-l flex-wrap-l">
+<div class="fl w-25 tc calibre normal f">
+<p><img data-src="square_g.png" class="h5 rotate-90" /></p>
+<p>Feels amazing to use</p>
+</div>
+<div class="fl w-75 tc calibre normal f1">
+<div class="lh-copy mt5 fl pl5">
+<ul>
+<li class="fragment">Complexity is revealed gradually</li>
+<li class="fragment">Sensible defaults</li>
+<li class="fragment">Customisable by experts</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
-<section>
-<section id="machine-learning" class="title-slide slide level1">
-<h1>Machine Learning</h1>
-
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="flex flex-column flex-row-l flex-wrap-l">
+<div class="fl w-25 tc calibre normal f">
+<p><img data-src="circle_t.png" class="h5 rotate-90" /></p>
+<p>Quick to get started</p>
+</div>
+<div class="fl w-75 tc calibre normal f1">
+<div class="fl ph5">
+<p>Install the PIP or conda package.</p>
+</div>
+<div class="lh-copy mt5 fl ph5">
+<ul>
+<li class="fragment">Try out one of the <a
+href="https://norse.github.io/notebooks/">jupyter notebooks</a></li>
+<li class="fragment">Read our <a
+href="https://norse.github.io/norse/">interactive documentation</a></li>
+<li class="fragment">End-to-end <a
+href="https://github.com/norse/norse/tree/main/norse/task">example
+tasks</a></li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-<section id="building-network-architectures" class="slide level2">
-<h2>Building Network Architectures</h2>
+<section id="event-streaming" class="slide level2">
+<h2>Event-Streaming</h2>
 </section>
-<section id="a-convolutional-network" class="slide level2">
-<h2>A Convolutional Network</h2>
-</section></section>
+<section id="deep-learning-with-norse" class="slide level2">
+<h2>Deep Learning with Norse</h2>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="flex flex-column flex-row-l flex-wrap-l mt5">
+<div class="fl w-33 tc calibre normal f2 mt3">
+<div class="mw7">
+<p><img data-src="triangle_c.png" class="h5 rotate-90" /></p>
+<p>Familiar to ML researchers</p>
+</div>
+</div>
+<div class="fl w-33 tc calibre normal f2 mt3">
+<div class="mw7">
+<p><img data-src="hexagon_r.png" class="h5 rotate-90" /></p>
+<p>Compose primitives freely</p>
+</div>
+</div>
+<div class="fl w-33 tc calibre normal f2 mt3">
+<div class="mw7">
+<p><img data-src="circle_y.png" class="h5 rotate-90" /></p>
+<p>Extensible by everyone</p>
+</div>
+</div>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="flex flex-column flex-row-l flex-wrap-l">
+<div class="fl w-25 tc calibre normal">
+<p><img data-src="triangle_c.png" class="rotate-90 h5" /></p>
+<p>Familiar to ML researchers</p>
+</div>
+<div class="fl w-75 tc calibre normal f1">
+<div class="lh-copy mt5 fl ph5">
+<ul>
+<li class="fragment">Build models like you would in PyTorch</li>
+<li class="fragment">Use dataloaders and training frameworks as is</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="flex flex-column flex-row-l flex-wrap-l">
+<div class="fl w-25 tc calibre normal f">
+<p><img data-src="hexagon_r.png" class="h5 rotate-90" /></p>
+<p>Compose primitives freely</p>
+</div>
+<div class="fl w-75 tc normal f1">
+<div class="sourceCode" id="cb1" data-line-numbers="3,8-10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch, torch.nn <span class="im">as</span> nn</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> norse.torch <span class="im">import</span> LICell</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> norse.torch <span class="im">import</span> LIFCell</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> norse.torch <span class="im">import</span> SequentialState</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> SequentialState(</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    nn.Conv2d(<span class="dv">1</span>, <span class="dv">20</span>, <span class="dv">5</span>, <span class="dv">1</span>),                <span class="co"># convolve from 1 -&gt; 20 channels</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    LIFCell(),                             <span class="co"># leaky-integrate and fire neurons</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    nn.MaxPool2d(<span class="dv">2</span>, <span class="dv">2</span>),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    nn.Conv2d(<span class="dv">20</span>, <span class="dv">50</span>, <span class="dv">5</span>, <span class="dv">1</span>),               <span class="co"># convolve from 20 -&gt; 50 channels</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    LIFCell(),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    nn.MaxPool2d(<span class="dv">2</span>, <span class="dv">2</span>),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    nn.Flatten(),                          <span class="co"># flatten to 800 units</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    nn.Linear(<span class="dv">800</span>, <span class="dv">10</span>),</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    LICell(),                              <span class="co"># leaky-integrator</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+</div>
+</div>
+</section>
 <section>
 <section id="workshop" class="title-slide slide level1">
 <h1>Workshop</h1>
 
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <div>
 <ul>
@@ -126,38 +311,30 @@ Stockholm)</span>
 </section>
 <section id="goals" class="slide level2">
 <h2>Goals</h2>
-<div class="cf">
-<div>
-<div class="fl w-33 tc">
-<ul>
-<li class="fragment">Blazing fast</li>
-</ul>
-</div>
-<div class="fl w-33 tc">
-<ul>
-<li class="fragment">Feels amazing to use</li>
-</ul>
-</div>
-<div class="fl w-33 tc">
-<ul>
-<li class="fragment">Quick to get started</li>
-</ul>
-</div>
-</div>
-</div>
 </section></section>
 <section>
 <section id="lets-get-started" class="title-slide slide level1">
-<h1>Let’s get started</h1>
+<h1>Let’s get started!</h1>
 
 </section>
 <section id="funding-acknowledgements" class="slide level2">
 <h2>Funding &amp; Acknowledgements</h2>
+<div class="tl gray">
 <p>The research has received funding from the EC Horizon 2020 Framework
 Programme under Grant Agreements 785907 and 945539 (HBP) and by the
 Deutsche Forschungsgemeinschaft (DFG, German Research Fundation) under
 Germany’s Excellence Strategy EXC 2181/1 - 390900948 (the Heidelberg
 STRUCTURES Excellence Cluster).</p>
+</div>
+<p><img data-src="hexagon_r.png" class="h4 rotate-90" /> <img
+data-src="triangle_c.png" class="h4 rotate-90" /> <img
+data-src="circle_y.png" class="h4 rotate-90" /></p>
+<div class="tl gray">
+<p>Icons by Thought Machine</p>
+<p>© 2022 Thought Machine</p>
+<p>Released under <a
+href="https://creativecommons.org/licenses/by/4.0/">CC-BY-v4</a></p>
+</div>
 </section></section>
     </div>
   </div>
