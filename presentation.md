@@ -14,42 +14,43 @@ center: False
 width: 1920
 ---
 
+## What is Norse?
+
+
 
 ## 
 
-:::: {.cf .center}
-::: {.incremental}
-::: {.fl .w-33 .tc .blue}
-- Blazing fast
+:::: {.flex .flex-column .flex-row-l .flex-wrap-l .mt5}
+
+::: {.fl .w-33 .tc .calibre .normal .f2 .mt3}
+::: {.mw7}
+![](triangle_v.png){.h5 .rotate-90}
+
+Blazing fast 
+
+:::
 :::
 
-::: {.fl .w-33 .tc .red}
-- Feels amazing to use
+::: {.fl .w-33 .tc .calibre .normal .f2 .mt3}
+::: {.mw7}
+![](square_g.png){.h5 .rotate-90}
+
+Feels amazing to use
+
+:::
 :::
 
-::: {.fl .w-33 .tc .gold}
-- Quick to get started
+::: {.fl .w-33 .tc .calibre .normal .f2 .mt3}
+::: {.mw7}
+![](circle_t.png){.h5 .rotate-90}
+
+Quick to get started
 :::
 :::
+
 ::::
 
-## 
-
-:::: {.cf .center}
-::: {.incremental}
-::: {.fl .w-33 .tc .blue}
-- Inclusion
-:::
-
-::: {.fl .w-33 .tc .red}
-- Openness
-:::
-
-::: {.fl .w-33 .tc .gold}
-- Happiness
-:::
-:::
-::::
+##
 
 
 # Event-Streaming
@@ -105,7 +106,7 @@ width: 1920
 :::
 ::::
 
-# Thanks
+# Let's get started
 
 ## Funding & Acknowledgements
 
