@@ -75,9 +75,9 @@ Blazing fast
 
 
 ::: {.incremental .lh-copy .mt5 .fl .pl5}
-- PyTorch already takes care of most of the work
-- Implementation is performance aware
-- Custom code for selected operations
+- PyTorch already takes care of most of the work.
+- Implementation is performance aware.
+- Custom code for selected operations.
 ::: 
 
 
@@ -101,9 +101,9 @@ Feels amazing to use
 
 
 ::: {.incremental .lh-copy .mt5 .fl .pl5 }
-- Complexity is revealed gradually
-- Sensible defaults
-- Customisable by experts
+- Complexity is revealed gradually.
+- Sensible defaults.
+- Easily customisable and extendible.
 ::: 
 
 
@@ -130,9 +130,9 @@ Install the PIP or conda package.
 :::
 
 ::: {.incremental .lh-copy .mt5 .fl .ph5}
-- Try out one of the [jupyter notebooks](https://norse.github.io/notebooks/)
-- Read our [interactive documentation](https://norse.github.io/norse/)
-- End-to-end [example tasks](https://github.com/norse/norse/tree/main/norse/task)
+- Try out one of the [jupyter notebooks](https://norse.github.io/notebooks/).
+- Read our [interactive documentation](https://norse.github.io/norse/).
+- End-to-end [example tasks](https://github.com/norse/norse/tree/main/norse/task).
 ::: 
 
 
