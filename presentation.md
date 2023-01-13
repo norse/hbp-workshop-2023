@@ -26,7 +26,7 @@ Spiking Neuron Primitives implemented for PyTorch
 
 ##
 
-:::: {.flex .flex-column .flex-row-l .flex-wrap-l .mt5}
+:::: {.flex .flex-column .flex-row-l .flex-wrap-l .mt5 .fragment}
 
 ::: {.fl .w-33 .tc .calibre .normal .f2 .mt3}
 ::: {.mw7}
@@ -151,7 +151,7 @@ Install the PIP or conda package.
 
 :::: {.flex .flex-column .flex-row-l .flex-wrap-l .mt5}
 
-::: {.fl .w-33 .tc .calibre .normal .f2 .mt3}
+::: {.fl .w-33 .tc .calibre .normal .f2 .mt3 .fragment}
 ::: {.mw7}
 ![](triangle_c.png){.h5 .rotate-90}
 
