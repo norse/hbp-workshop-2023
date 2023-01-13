@@ -103,7 +103,7 @@ Feels amazing to use
 ::: {.incremental .lh-copy .mt5 .fl .pl5 }
 - Complexity is revealed gradually.
 - Sensible defaults.
-- Easily customisable and extendible.
+- Easily customisable and extensible.
 ::: 
 
 
