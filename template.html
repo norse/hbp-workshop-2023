@@ -52,12 +52,19 @@ $if(subtitle)$
   <p class="subtitle">$subtitle$</p>
 $endif$
 <div>
+<div class="flex"> 
 $for(author)$
-  <span class="pr5 white-70 f2 author">$author.name$ ($author.affiliation$)</span>
+<div class="fl pr5">
+  <p class="white-70 f1">$author.name$</p>
+  <p class="white-70 f2">$author.affiliation$</p>
+  <a href="mailto:$author.email$" class="link dim f2">$author.email$</a>
+</div>
 $endfor$
 </div>
+</p>
+</div>
 $if(date)$
-  <p class="date gray">$date$</p>
+  <p class="f1 gray">$date$</p>
 $endif$
 </section>
 $endif$
@@ -85,7 +92,8 @@ $body$
 $if(mathjax)$
   <script src="$revealjs-url$/plugin/math/math.js"></script>
 $endif$
-
+  <script src="$revealjs-url$/plugin/highlight/highlight.js"></script>
+  <link rel="stylesheet" href="$revealjs-url$/plugin/highlight/monokai.css">
   <script>
 
       // Full list of configuration options available at:
@@ -306,6 +314,7 @@ $endif$
 $if(mathjax)$
           RevealMath,
 $endif$
+          RevealHighlight,
           RevealNotes,
           RevealSearch,
           RevealZoom
