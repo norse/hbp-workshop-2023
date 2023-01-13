@@ -1,14 +1,15 @@
 ---
 title: "Norse: Machine Learning with SNN"
+image: https://raw.githubusercontent.com/norse/norse/master/logo.png
 author:
     - 
         name: Christian Pehle
         affiliation: Heidelberg University
         email: christian.pehle@kip.uni-heidelberg.de
     - 
-        name: Jens Pedersen
+        name: Jens E. Pedersen
         affiliation: KTH Stockholm
-        email: jens@jepedersen.dk
+        email: jeped@kth.se
 date: January 18, 2023
 theme: 'white'
 slideNumber: True
@@ -140,10 +141,8 @@ Install the PIP or conda package.
 :::
 
 
-
-
-
 ## Event-Streaming
+
 
 ## Deep Learning with Norse
 
