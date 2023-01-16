@@ -16,15 +16,10 @@
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link href='css/fonts.css' rel='stylesheet'>
@@ -37,6 +32,7 @@
     <div class="slides">
 
 <section id="title-slide">
+  <img src="https://raw.githubusercontent.com/norse/norse/master/logo.png"/>
   <h1 class="title">Norse: Machine Learning with SNN</h1>
 <div>
 <div class="flex"> 
@@ -46,9 +42,9 @@
   <a href="mailto:christian.pehle@kip.uni-heidelberg.de" class="link dim f2">christian.pehle@kip.uni-heidelberg.de</a>
 </div>
 <div class="fl pr5">
-  <p class="white-70 f1">Jens Pedersen</p>
+  <p class="white-70 f1">Jens E. Pedersen</p>
   <p class="white-70 f2">KTH Stockholm</p>
-  <a href="mailto:jens@jepedersen.dk" class="link dim f2">jens@jepedersen.dk</a>
+  <a href="mailto:jeped@kth.se" class="link dim f2">jeped@kth.se</a>
 </div>
 </div>
 </p>
@@ -133,7 +129,8 @@ work.</li>
 </div>
 <div class="fl w-75 tc calibre normal f1">
 <div class="fl ph5">
-<p>Install the PIP or conda package.</p>
+<p>Install the PIP or conda package:</p>
+<p><code>pip install norse</code></p>
 </div>
 <div class="lh-copy mt5 fl ph5">
 <ul>
@@ -150,13 +147,91 @@ tasks</a>.</li>
 </div>
 </div>
 </section>
-<section id="event-streaming" class="slide level2">
-<h2>Event-Streaming</h2>
+<section id="event-based-processing-with-norse" class="slide level2">
+<h2>Event-based processing with Norse</h2>
+<ul>
+<li>Asynchronous and parallel <span class="fragment">- perfect for
+neuromorphics</span></li>
+</ul>
+<p><img
+data-src="https://upload.wikimedia.org/wikipedia/commons/2/26/Event_camera_comparison.jpg" /></p>
+</section>
+<section id="event-based-neuron-models" class="slide level2">
+<h2>Event-based neuron models</h2>
+<div class="fl w-50 tc calibre normal f1 bg-washed-blue">
+<p><img style="height:120px;" src="2209_event_norse.png"/></p>
+</div>
+<div class="fl w-10 tc calibre normal f1">
+<p><br/></p>
+</div>
+<div class="fl w-40 tc calibre normal f1 bg-washed-blue">
+<p><img style="height:120px;" src="edge_detector.png"/></p>
+</div>
+<div class="fl w-100 tc calibre normal f1 fragment">
+<p><img
+data-src="https://github.com/norse/aestream/raw/main/example/usb_edgedetection.gif" /></p>
+</div>
+</section>
+<section id="event-based-edge-detector" class="slide level2">
+<h2>Event-based edge detector</h2>
+<div class="fl w-20 tc calibre normal f1">
+<p><img
+data-src="https://github.com/vdumoulin/conv_arithmetic/raw/master/gif/arbitrary_padding_no_strides.gif" /></p>
+<!-- Source: https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md -->
+</div>
+<div class="fl w-10 tc calibre normal f1">
+<p><br/></p>
+</div>
+<div class="fl w-70 tc calibre normal f1 fragment">
+<p><br/></p>
+<pre data-id="code-animation"><code class="python" data-line-numbers="1|2|4,7|5|6|4-7">import torch
+from norse.torch import LIFRefracCell
+
+model = nn.Sequential(
+    LIFRefracCell(),
+    torch.nn.Conv2d(1, 1, 5),
+)</code></pre>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<video width="70%" controls loop>
+<source src="https://jepedersen.dk/slides/202209_neurotech/2209-edge-detection.mp4" type="video/mp4">
+</video>
+</section>
+<section id="event-based-streaming-with-norse" class="slide level2">
+<h2>Event-based streaming with Norse</h2>
+<ul>
+<li>Real-time streaming with AEStream
+<ul>
+<li><code>with FileInput(...) as file: ...</code></li>
+</ul></li>
+</ul>
+<p><br/></p>
+<div class="fragment">
+<ul>
+<li>Real-time spiking neuron dynamics with Norse
+<ul>
+<li><code>lif_network(file.read())</code></li>
+</ul></li>
+</ul>
+</div>
+<p><br/></p>
+<div class="fragment">
+<ul>
+<li>Future projects
+<ul>
+<li>Control systems</li>
+<li>Plasticity</li>
+<li>Meta learning</li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section id="deep-learning-with-norse" class="slide level2">
 <h2>Deep Learning with Norse</h2>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l mt5">
 <div class="fl w-33 tc calibre normal f2 mt3 fragment">
@@ -179,7 +254,7 @@ tasks</a>.</li>
 </div>
 </div>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-25 tc calibre normal">
@@ -197,7 +272,7 @@ tasks</a>.</li>
 </div>
 </div>
 </section>
-<section id="section-6" class="slide level2" data-auto-animate="">
+<section id="section-7" class="slide level2" data-auto-animate="">
 <h2 data-auto-animate=""></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-25 tc calibre normal f">
@@ -230,7 +305,7 @@ model = nn.Sequential(
 </div>
 </div>
 </section>
-<section id="section-7" class="slide level2" data-auto-animate="">
+<section id="section-8" class="slide level2" data-auto-animate="">
 <h2 data-auto-animate=""></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-25 tc calibre normal f">
@@ -261,7 +336,7 @@ model = SequentialState(
 </div>
 </div>
 </section>
-<section id="section-8" class="slide level2" data-auto-animate="">
+<section id="section-9" class="slide level2" data-auto-animate="">
 <h2 data-auto-animate=""></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-25 tc calibre normal f">
@@ -292,7 +367,7 @@ model = SequentialState(
 </div>
 </div>
 </section>
-<section id="section-9" class="slide level2" data-auto-animate="">
+<section id="section-10" class="slide level2" data-auto-animate="">
 <h2 data-auto-animate=""></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-25 tc calibre normal f">
@@ -323,7 +398,7 @@ model = SequentialState(
 </div>
 </div>
 </section>
-<section id="section-10" class="slide level2" data-auto-animate="">
+<section id="section-11" class="slide level2" data-auto-animate="">
 <h2 data-auto-animate=""></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-25 tc calibre normal f">
@@ -354,7 +429,7 @@ model = nn.Sequential(
 </div>
 </div>
 </section>
-<section id="section-11" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-25 tc calibre normal f">
@@ -382,7 +457,7 @@ community.</li>
 <h1>Workshop</h1>
 
 </section>
-<section id="section-12" class="slide level2">
+<section id="section-13" class="slide level2">
 <h2></h2>
 <div class="flex flex-column flex-row-l flex-wrap-l">
 <div class="fl w-50 calibre tc normal f1">
@@ -399,15 +474,12 @@ community.</li>
 <h2>Schedule</h2>
 <div class="fragment">
 <ul>
-<li>9:00 - 9:30
-<ul>
-<li>Presentation + Questions (&lt;- we are here)</li>
-</ul></li>
+<li>9:00 - 9:30: Presentation + Questions (&lt;- we are here)</li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>9:30 - 10:30
+<li>9:30 - 10:15: Workshop 1/2
 <ul>
 <li><img data-src="triangle_g.png" class="h2 v-mid rotate-90" /> Event
 streaming (Jens)</li>
@@ -418,13 +490,23 @@ streaming (Jens)</li>
 </div>
 <div class="fragment">
 <ul>
-<li>10:30 - 11:30
+<li>10:15 - 10:30: Break</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>10:30 - 11:15: Workshop 2/2
 <ul>
 <li><img data-src="triangle_g.png" class="h2 v-mid rotate-90" /> Event
 streaming (Jens)</li>
 <li><img data-src="circle_y.png" class="h2 v-mid" /> Deep learning
 (Christian)</li>
 </ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>11:15 - 11:30: Q&amp;A</li>
 </ul>
 </div>
 </section>

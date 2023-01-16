@@ -127,10 +127,13 @@ Quick to get started
 ::: {.fl .w-75 .tc .calibre .normal .f1}
 
 ::: {.fl .ph5}
-Install the PIP or conda package.
+Install the PIP or conda package: 
+
+`pip install norse`
 :::
 
 ::: {.incremental .lh-copy .mt5 .fl .ph5}
+  
 - Try out one of the [jupyter notebooks](https://norse.github.io/notebooks/).
 - Read our [interactive documentation](https://norse.github.io/norse/).
 - End-to-end [example tasks](https://github.com/norse/norse/tree/main/norse/task).
@@ -141,8 +144,98 @@ Install the PIP or conda package.
 :::
 
 
-## Event-Streaming
+## Event-based processing with Norse
 
+- Asynchronous and parallel <span class="fragment">- perfect for neuromorphics</span>
+
+![](https://upload.wikimedia.org/wikipedia/commons/2/26/Event_camera_comparison.jpg)
+
+## Event-based neuron models
+
+::: {.fl .w-50 .tc .calibre .normal .f1 .bg-washed-blue}
+
+<img style="height:120px;" src="2209_event_norse.png"/>
+
+:::
+
+::: {.fl .w-10 .tc .calibre .normal .f1 }
+
+<br/>
+
+:::
+
+::: {.fl .w-40 .tc .calibre .normal .f1 .bg-washed-blue}
+
+<img style="height:120px;" src="edge_detector.png"/>
+
+:::
+
+::: {.fl .w-100 .tc .calibre .normal .f1 .fragment}
+
+![](https://github.com/norse/aestream/raw/main/example/usb_edgedetection.gif)
+
+:::
+
+
+## Event-based edge detector
+
+
+::: {.fl .w-20 .tc .calibre .normal .f1}
+
+![](https://github.com/vdumoulin/conv_arithmetic/raw/master/gif/arbitrary_padding_no_strides.gif)
+
+<!-- Source: https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md -->
+
+:::
+
+::: {.fl .w-10 .tc .calibre .normal .f1 }
+
+<br/>
+
+:::
+
+::: {.fl .w-70 .tc .calibre .normal .f1 .fragment}
+
+<br/>
+
+```{.python data-line-numbers="1|2|4,7|5|6|4-7" data-id="code-animation"}
+import torch
+from norse.torch import LIFRefracCell
+
+model = nn.Sequential(
+    LIFRefracCell(),
+    torch.nn.Conv2d(1, 1, 5),
+)
+```
+:::
+
+## 
+
+<video width="70%" controls loop>
+      <source src="https://jepedersen.dk/slides/202209_neurotech/2209-edge-detection.mp4" type="video/mp4">
+</video>
+
+## Event-based streaming with Norse
+
+- Real-time streaming with AEStream
+  - `with FileInput(...) as file: ...`
+
+<br/>
+
+::: {.fragment}
+- Real-time spiking neuron dynamics with Norse
+  - `lif_network(file.read())`
+:::
+
+<br/>
+
+::: {.fragment}
+- Future projects
+  - Control systems
+  - Plasticity
+  - Meta learning
+
+:::
 
 ## Deep Learning with Norse
 
@@ -471,20 +564,24 @@ Deep Learning
 ## Schedule
 
 ::: {.fragment}
-- 9:00 - 9:30 
-    - Presentation + Questions (<- we are here)
+- 9:00 - 9:30:  Presentation + Questions (<- we are here)
 :::
 ::: {.fragment}
-- 9:30 - 10:30
+- 9:30 - 10:15: Workshop 1/2
     - ![](triangle_g.png){.h2 .v-mid .rotate-90} Event streaming (Jens)
     - ![](circle_y.png){.h2 .v-mid} Deep learning (Christian)
 :::
 ::: {.fragment}
-- 10:30 - 11:30
+- 10:15 - 10:30: Break
+:::
+::: {.fragment}
+- 10:30 - 11:15: Workshop 2/2
     - ![](triangle_g.png){.h2 .v-mid .rotate-90} Event streaming (Jens)
     - ![](circle_y.png){.h2 .v-mid} Deep learning (Christian)
 :::
-
+::: {.fragment}
+- 11:15 - 11:30: Q&A
+:::
 
 ## Workshop 1: Event streaming
 
