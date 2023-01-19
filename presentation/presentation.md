@@ -675,3 +675,13 @@ Released under [CC-BY-v4](https://creativecommons.org/licenses/by/4.0/)
 The research has received funding from the EC Horizon 2020 Framework Programme under Grant Agreements 785907 and 945539 (HBP) and by the Deutsche Forschungsgemeinschaft (DFG, German Research Fundation) under Germany's Excellence Strategy EXC 2181/1 - 390900948 (the Heidelberg STRUCTURES Excellence Cluster).
 
 :::
+
+## References
+
+A non comprehensive list of related literature is found below:
+
+- Neftci, Emre O., Hesham Mostafa, and Friedemann Zenke. "Surrogate gradient learning in spiking neural networks: Bringing the power of gradient-based optimization to spiking neural networks." IEEE Signal Processing Magazine 36, no. 6 (2019): 51-63
+- Esser, Steve K., Rathinakumar Appuswamy, Paul Merolla, John V. Arthur, and Dharmendra S. Modha. "Backpropagation for energy-efficient neuromorphic computing." Advances in neural information processing systems 28 (2015).
+- Bellec, Guillaume, Darjan Salaj, Anand Subramoney, Robert Legenstein, and Wolfgang Maass. "Long short-term memory and learning-to-learn in networks of spiking neurons." Advances in neural information processing systems 31 (2018).
+- Perez-Nieves, Nicolas, and Dan Goodman. "Sparse spiking gradient descent." Advances in Neural Information Processing Systems 34 (2021): 11795-11808.
+- Yin, Bojian, Federico Corradi, and Sander M. Bohté. "Accurate and efficient time-domain classification with adaptive spiking recurrent neural networks." Nature Machine Intelligence 3, no. 10 (2021): 905-913.
