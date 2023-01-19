@@ -538,6 +538,19 @@ Join us on [github](https://github.com/github/) and [discord](https://discord.gg
 :::
 :::
 
+## Limitations
+
+- Naive numerical integration
+- Memory limitations (BPTT)
+
+## Future Work
+
+
+- Gradient based online Learning Algorithms (FPTT, E-Prop)
+- Metaplasticity & Neuro Inspired Models
+- Norse as interface to Neuromorphic Hardware
+
+
 
 # Workshop
 
